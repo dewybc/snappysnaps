@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53FF842C0C5E3F39500571A2 /* Pods_Snappy_Snaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B03C289B85E3F7ED541594B /* Pods_Snappy_Snaps.framework */; };
 		9B2E7C231EC9478D0059B733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E7C221EC9478D0059B733 /* AppDelegate.swift */; };
 		9B2E7C251EC9478D0059B733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E7C241EC9478D0059B733 /* ViewController.swift */; };
 		9B2E7C281EC9478D0059B733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E7C261EC9478D0059B733 /* Main.storyboard */; };
 		9B2E7C2B1EC9478D0059B733 /* Snappy_Snaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E7C291EC9478D0059B733 /* Snappy_Snaps.xcdatamodeld */; };
 		9B2E7C2D1EC9478D0059B733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E7C2C1EC9478D0059B733 /* Assets.xcassets */; };
 		9B2E7C301EC9478D0059B733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E7C2E1EC9478D0059B733 /* LaunchScreen.storyboard */; };
+		9B2E7C381EC948FE0059B733 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E7C371EC948FE0059B733 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153B1AD1C0EB62FA5D8979D8 /* Pods-Snappy Snaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappy Snaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snappy Snaps/Pods-Snappy Snaps.release.xcconfig"; sourceTree = "<group>"; };
+		7BABB7479B9F2157411A7AAD /* Pods-Snappy Snaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappy Snaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snappy Snaps/Pods-Snappy Snaps.debug.xcconfig"; sourceTree = "<group>"; };
+		8B03C289B85E3F7ED541594B /* Pods_Snappy_Snaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snappy_Snaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2E7C1F1EC9478D0059B733 /* Snappy Snaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snappy Snaps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2E7C221EC9478D0059B733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B2E7C241EC9478D0059B733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		9B2E7C2C1EC9478D0059B733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B2E7C2F1EC9478D0059B733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B2E7C311EC9478D0059B733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B2E7C371EC948FE0059B733 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FF842C0C5E3F39500571A2 /* Pods_Snappy_Snaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272C76E8D00B0A2822669740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BABB7479B9F2157411A7AAD /* Pods-Snappy Snaps.debug.xcconfig */,
+				153B1AD1C0EB62FA5D8979D8 /* Pods-Snappy Snaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		862D5CC3B5DE1DAA10CE602C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B03C289B85E3F7ED541594B /* Pods_Snappy_Snaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B2E7C161EC9478D0059B733 = {
 			isa = PBXGroup;
 			children = (
 				9B2E7C211EC9478D0059B733 /* Snappy Snaps */,
 				9B2E7C201EC9478D0059B733 /* Products */,
+				272C76E8D00B0A2822669740 /* Pods */,
+				862D5CC3B5DE1DAA10CE602C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				9B2E7C2E1EC9478D0059B733 /* LaunchScreen.storyboard */,
 				9B2E7C311EC9478D0059B733 /* Info.plist */,
 				9B2E7C291EC9478D0059B733 /* Snappy_Snaps.xcdatamodeld */,
+				9B2E7C371EC948FE0059B733 /* GoogleService-Info.plist */,
 			);
 			path = "Snappy Snaps";
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B2E7C341EC9478D0059B733 /* Build configuration list for PBXNativeTarget "Snappy Snaps" */;
 			buildPhases = (
+				444E577C63D926C839F53878 /* [CP] Check Pods Manifest.lock */,
 				9B2E7C1B1EC9478D0059B733 /* Sources */,
 				9B2E7C1C1EC9478D0059B733 /* Frameworks */,
 				9B2E7C1D1EC9478D0059B733 /* Resources */,
+				5DAE013AA4966998252B1D77 /* [CP] Embed Pods Frameworks */,
+				B4B3CCC4EF481F667D06E384 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2E7C301EC9478D0059B733 /* LaunchScreen.storyboard in Resources */,
+				9B2E7C381EC948FE0059B733 /* GoogleService-Info.plist in Resources */,
 				9B2E7C2D1EC9478D0059B733 /* Assets.xcassets in Resources */,
 				9B2E7C281EC9478D0059B733 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		444E577C63D926C839F53878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DAE013AA4966998252B1D77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snappy Snaps/Pods-Snappy Snaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4B3CCC4EF481F667D06E384 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snappy Snaps/Pods-Snappy Snaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B2E7C1B1EC9478D0059B733 /* Sources */ = {
@@ -263,6 +342,7 @@
 		};
 		9B2E7C351EC9478D0059B733 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BABB7479B9F2157411A7AAD /* Pods-Snappy Snaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5BPQ5474D;
@@ -276,6 +356,7 @@
 		};
 		9B2E7C361EC9478D0059B733 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153B1AD1C0EB62FA5D8979D8 /* Pods-Snappy Snaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5BPQ5474D;
